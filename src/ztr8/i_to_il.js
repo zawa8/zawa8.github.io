@@ -29,18 +29,17 @@ export function i_to_il(ioz) {
     indeks++ ;
   }
   ioz.o.value =
-		"1. " + oarr[0] + "\n" + //" #vowelहiनदi\nअदहत=ADHT=ᴀԃɦᴛ ᴀ=A=à ԃ=D≠d ᴛ≠t ɦ≠h N=ṅ≠n zava8.github.io -> font -> hin115.ttf \n8aiueohcg 8àԃɦᴛṅkvz 5टडपबस(टh डh पh बh सh) 6यरलमनफ\n" +
-		"2. " + oarr[1] + "\n" + // "\nzava8.github.io -> font -> bengali115.ttf \n" +
-		"7. " + oarr[6] + "\n" + // "\nzava8.github.io -> font -> ᴛelugu115.ttf \n" +
-		"J. " + oarr[10] + "\n" + //
-		"6. " + oarr[5] + "\n" + // "\nzava8.github.io -> font -> ᴛàmil115.ttf \n" +
-		"8. " + oarr[7] + "\n" + // "\nzava8.github.io -> font -> kànnàda115.ttf \n" +
-		"9. " + oarr[8] + "\n" + // "\nzava8.github.io -> font -> màlàyalàm115.ttf \n" +
-		//"B. " + oarr[11] + "\n" // "\n#russiàn zava8.github.io -> font -> russiàn115.ttf \n" +
-		"5. " + oarr[4] + "\n" + // "\nzava8.github.io -> font -> odia115.ttf \n" +
-		"Y. " + oarr[9] + "\n" + // "\nzava8.github.io -> font -> sinɦàla115.ttf \n" +
-		"3. " + oarr[2] + "\n" + // "\nzava8.github.io -> font -> pnzabi115.ttf \n" +
-		"4. " + oarr[3] + "\n" ; // "\nzava8.github.io -> font -> guzraᴛi115.ttf \n" ;
+		"1. " + oarr[0] + "\n" +
+		"2. " + oarr[1] + "\n" +
+		"7. " + oarr[6] + "\n" +
+		"Y. " + oarr[10] + "\n" +
+		"6. " + oarr[5] + "\n" +
+		"8. " + oarr[7] + "\n" +
+		"9. " + oarr[8] + "\n" +
+		"5. " + oarr[4] + "\n" +
+		"L. " + oarr[9] + "\n" +
+		"3. " + oarr[2] + "\n" +
+		"4. " + oarr[3] + "\n" ;
 }
 
 // export default i_to_il
