@@ -10,9 +10,12 @@ function u2i_pre(ioz: { i: string; o: string; z: string  }): void {
 */          
 function u2i_post(ioz: { i: string; o: string; z: string  }): void {
 	// wowel_chr at boundary/in_between
-    ioz.i = ioz.o = ioz.o.replaceAll(/\ba([IUEO])/g, "$1").replace(
+	//nई ई कई uई eई oई iई  αई Aई  aई Nई
+    ioz.i = ioz.o = ioz.o.replaceAll(
+		/^a([IUEO])/g, "$1").replace(
+		/([\b\saαAiueoN])a([IUEO])/g, "$1$2").replace(
 		/([IUEO])/g, function(v) { return v.toLowerCase(); }
-		);//.replaceAll(/([hiueo])A/g, "$1");
+	);//.replaceAll(/([hiueo])A/g, "$1");
     ioz.i = ioz.o = ioz.o.replaceAll(
         /([a-zԃɦńᴛ])aa/ig,"$1a").replaceAll(
         /([iueo])a([αIUEO])/g,"$1$2").replaceAll(

@@ -14,20 +14,20 @@ export const usinhl2idict: {
         'aα', // d86 letter aa
         'ae', // d87  letter ae
         'αe', // d88  letter aae
-        'I', // d89  letter i
-        'I', // d8a letter ii
-        'U', // d8b= sinhala letter u
-        'U', // d8c= sinhala letter uu
+        'aI', // d89  letter i
+        'aI', // d8a letter ii
+        'aU', // d8b= sinhala letter u
+        'aU', // d8c= sinhala letter uu
         'r', // 	d8d volalic r
         'ri', // 	d8e vocalic rr
         'l', // 	d8f volalic l
         'li', // 	d90 volalic ll
-        'E', // 	d91 letter e
-        'E', // 	d92 letter ee
-        'E', // 	d93= sinhala letter ai
-        'O', // 	d94= sinhala letter o
-        'O', // 	d95= sinhala letter oo
-        'O', // 	d96= sinhala letter au
+        'aE', // 	d91 letter e
+        'aE', // 	d92 letter ee
+        'aE', // 	d93= sinhala letter ai
+        'aO', // 	d94= sinhala letter o
+        'aO', // 	d95= sinhala letter oo
+        'aO', // 	d96= sinhala letter au
         '', // 	d97 null
         '', // 	d98 null
         '', // 	d99 null
@@ -37,8 +37,8 @@ export const usinhl2idict: {
         'gh', // 	d9d gha
         'N', // 	d9e nga
         'N', // 	d9f nnga
-        'ch', // 	da0 ch
-        'Ch', // 	da1 chh
+        'c', // 	da0 ch
+        'C', // 	da1 chh
         'z', // 	da2 za
         'Z', // 	da3 zha
         'n', // 	da4= sinhala letter nya
