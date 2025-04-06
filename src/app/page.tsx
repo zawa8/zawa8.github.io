@@ -26,20 +26,14 @@ export default function Home() {
   };
   function itekst_on_input(): void { duztr(ioz); }
   //function ztrdir_changed(): void { duztr(ioz); }
-  function on_ue2il() { 
+  function on_eu2l() { 
     ioz.i = iteksta ;
     //ue2il(ioz); 
     /////
     ioz.z = "e2i"; duztr(ioz);
-    let all_text = "ing31: " ;
     ioz.z = "u2i"; duztr(ioz);
-    ioz.i = ioz.o; set_iteksta(ioz.i);
-    all_text += (ioz.o + "\n") ;
-    ioz.z = "i2il"; duztr(ioz);
-    all_text += (ioz.o + "\n") ;
-    ioz.o = all_text;
-    /////
-    // set_iteksta(ioz.i);
+    ioz.i = ioz.o; // set_iteksta(ioz.i); //risky
+    ioz.z = "i2l"; duztr(ioz);
     set_oteksta(ioz.o);
   }
 
@@ -88,7 +82,7 @@ export default function Home() {
           <textarea id="ita" value={iteksta} onChange={handle_ita_change} cols={80}></textarea>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Button onClick={on_ue2il}>ue2il</Button>
+          <Button onClick={on_eu2l}>eu2l</Button>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <textarea id="ota" value={oteksta} onChange={handle_ota_change} cols={80} rows={12}></textarea>

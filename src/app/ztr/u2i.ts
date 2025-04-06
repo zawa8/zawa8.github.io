@@ -10,23 +10,26 @@ function u2i_pre(ioz: { i: string; o: string; z: string  }): void {
 */          
 function u2i_post(ioz: { i: string; o: string; z: string  }): void {
 	// wowel_chr at boundary/in_between
-    ioz.i = ioz.o = ioz.o.replaceAll(/\ba([IUEO])/g, "$1");//.replaceAll(/([hiueo])A/g, "$1");
+    ioz.i = ioz.o = ioz.o.replaceAll(/\ba([IUEO])/g, "$1").replace(
+		/([IUEO])/g, function(v) { return v.toLowerCase(); }
+		);//.replaceAll(/([hiueo])A/g, "$1");
     ioz.i = ioz.o = ioz.o.replaceAll(
         /([a-zԃɦńᴛ])aa/ig,"$1a").replaceAll(
         /([iueo])a([αIUEO])/g,"$1$2").replaceAll(
-        /wN$/g,"wm").replaceAll(
+        /wN\b/g,"wm").replaceAll(
         /([aiueo])N\b/g,"$1").replaceAll(
         /N([w])/g,"$1").replaceAll( //gaNw nhi gaw
         /(^r)N$/g,"$1").replaceAll(
-        /N([),\s\.!\?naeiuhwv\b])/g,"$1").replaceAll(
-        /N([bp])/g,"m$1").replaceAll(
-        /N([^kg])/g,"n$1");
+        /N([),\'\s\.!\?naeiuhwv\b])/g,"$1").replaceAll(
+        /N([bBpf])/g,"m$1").replaceAll(
+        /N([^kgKG])/g,"n$1").replaceAll(
+        /N/g,"ń");
 
     ioz.i = ioz.o = ioz.o.replaceAll( /chch/ig,"cch");
-    ioz.i = ioz.o = ioz.o.replaceAll( /U/g,"u");
-    ioz.i = ioz.o = ioz.o.replaceAll( /E/g,"e");
-    ioz.i = ioz.o = ioz.o.replaceAll( /I/g,"i");
-    ioz.i = ioz.o = ioz.o.replaceAll( /O/g,"o");
+    // ioz.i = ioz.o = ioz.o.replaceAll( /U/g,"u");
+    // ioz.i = ioz.o = ioz.o.replaceAll( /E/g,"e");
+    // ioz.i = ioz.o = ioz.o.replaceAll( /I/g,"i");
+    // ioz.i = ioz.o = ioz.o.replaceAll( /O/g,"o");
 
 }
 export function u2i(ioz: { i: string; o: string; z: string  }): void {

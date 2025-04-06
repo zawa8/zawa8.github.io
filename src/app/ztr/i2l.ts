@@ -1,6 +1,7 @@
-// kKzZㅌT다DjJqQㄴㅍf바Bㅁy라lwSㅅɦa
+// ㅋKㅈZㅌT다DjJqQㄴㅍf바Bㅁㅑ라l봐Sㅅㅎㅏ
 // kKzZtTdDjJqQnpfbBmyrlwSsɦa
 // कखजझटठडढतथदधनपफबभमयरलवशसहअ
+// kKzZtTdDjJqQnpfbBmyrlSs
 // কখজঝটঠডঢতথদধনপফবভমযরলwশসহঅ
 // ਕਖਜਝਟਠਡਢਤਥਦਧਨਪਫਬਭਮਯਰਲਵਸ਼ਸਹਅ
 // કખજઝટઠડઢતથદધનપફબભમયરલવશસહઅ
@@ -10,15 +11,15 @@
 // കഖജഝടഠഡഢതഥദധനപഫബഭമയരലവശസഹഅ
 // කඛජඣටඨඩඪතථදධනපඵබභමයරලවශසහඅ
 // கKஜZடTdDதJqQநபfbBமயரலவஶஸஹஅ
-export function i2il(ioz: { i: string; o: string; z: string  }): void {
+export function i2l(ioz: { i: string; o: string; z: string  }): void {
 	//alert("abc");
 	const i2il_arr: string[] = [
-		"कखजझटठडढतथदधनपफबभमयरलवशसहअ","কখজঝটঠডঢতথদধনপফবভমযরলwশসহঅ",
-		"ਕਖਜਝਟਠਡਢਤਥਦਧਨਪਫਬਭਮਯਰਲਵਸ਼ਸਹਅ","કખજઝટઠડઢતથદધનપફબભમયરલવશસહઅ",
-		"କଖଜଝଟTଡଢତଥଦଧନପଫବଭମଯରଲଵଶସହଅ","కఖజఝటఠడఢతథదధనపఫబభమయరలవశసహఅ",
-		"ಕಖಜಝಟಠಡಢತಥದಧನಪಫಬಭಮಯರಲವಶಸಹಅ","കഖജഝടഠഡഢതഥദധനപഫബഭമയരലവശസഹഅ",
-		"කඛජඣටඨඩඪතථදධනපඵබභමයරලවශසහඅ","கKஜZடTdDதJqQநபfbBமயரலவஶஸஹஅ",
-		"kKzZㅌT다DjJqQㄴㅍf바Bㅁy라lwSㅅɦa",		
+		"कखजझटठडढतथदधनपफबभमयरलशसहअव","কখজঝটঠডঢতথদধনপফবভমযরলশসহঅw",
+		"ਕਖਜਝਟਠਡਢਤਥਦਧਨਪਫਬਭਮਯਰਲਸ਼ਸਹਅਵ","કખજઝટઠડઢતથદધનપફબભમયરલશસહઅવ",
+		"କଖଜଝଟTଡଢତଥଦଧନପଫବଭମଯରଲଶସହଅଵ","కఖజఝటఠడఢతథదధనపఫబభమయరలశసహఅవ",
+		"ಕಖಜಝಟಠಡಢತಥದಧನಪಫಬಭಮಯರಲಶಸಹಅವ","കഖജഝടഠഡഢതഥദധനപഫബഭമയരലശസഹഅവ",
+		"කඛජඣටඨඩඪතථදධනපඵබභමයරලශසහඅව","கKஜZடTdDதJqQநபfbBமயரலஶஸஹஅவ",
+		"ㅋKㅈZㅌT다DjJqQㄴㅍf바Bㅁㅑ라lSㅅㅎㅏ봐",
 	];// "тдпБсйрлмɦфaԃт"
 	const inputLength: number = ioz.i.length;
 	ioz.o = ''; 
@@ -26,19 +27,26 @@ export function i2il(ioz: { i: string; o: string; z: string  }): void {
 	let indeks: number = 0; 
 	let curr_chr: string = ''; 
 	// let nekst_char: string = '';
-	const hinchars: string = "kKzZtTdDjJqQnpfbBmyrlwSsɦa"; 
-
+	const hinchars: string = "kKzZtTdDjJqQnpfbBmyrlSs"; // ɦa"; 
+//////////////////
+	let ing32: string = ioz.i.replace(
+		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
+		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
+//////////////////
 	while (indeks < inputLength) {
 		curr_chr = ioz.i[indeks];
 		const chr_indeks: number = hinchars.indexOf(curr_chr); 
 		for (let i: number = 0; i < i2il_arr.length; i++) {
-			if (chr_indeks > -1) { oarr[i] += i2il_arr[i][chr_indeks]; } else { oarr[i] += curr_chr; }
+			if (chr_indeks > -1) { oarr[i] += i2il_arr[i][chr_indeks]; }
+			else { oarr[i] += curr_chr; }
 		}
     	indeks++;
   	}
 
 	ioz.o =
 		"\nhinԃi: " + oarr[0] + "\n\n" +
+		"ing4:[a-z]+4αԃɦт/ADHT: " + ing32 + "\n\n" +
+		"punzαbi gurmukhi: " + oarr[2] + "\n\n" +
 		"bαngla bengαli: " + oarr[1] + "\n\n" +
 		"тelugu: " + oarr[5] + "\n\n" +
 		"korean: " + oarr[10] + "\n\n" +
@@ -47,8 +55,7 @@ export function i2il(ioz: { i: string; o: string; z: string  }): void {
         "malayαlam: " + oarr[7] + "\n\n" +
         "odiα/oriyα: " + oarr[4] + "\n\n" +
         "sinhalα: " + oarr[8] + "\n\n" +
-        "gujarαтi: " + oarr[3] + "\n\n" +
-        "punzαbi: " + oarr[2] + "\n\nEng:52:a-z+A-Z ing:31:a-z+àԃɦńᴛ.\n" +
+        "guzrαтi: " + oarr[3] + "\n\nEng:52:a-z+A-Z ing:31:a-z+àԃɦńᴛ.\n" +
 		"aam aaDmi ki zrurт : bhasa anek , likhai anek , sbme 8aiueohcg ek.\n" +
 		"wn wowels(8aiueohcg) wn india wn bharT great india\n" +
 		"https://zawa8.vercel.app/font ing115b.ttf hindi115b.ttf android/chrome/firefox/windows/linux\n";

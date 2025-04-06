@@ -8,23 +8,23 @@ export const u2idict: {
         'N', // 	ँ	901	2305		anunasika(candrabindu)
         'N', // 	ं ń	902	2306	anuswara	anusvara bindu
         ':', // 	ः	903	2307		visarga
-        'aE', // 	ऄ à	904	2308		short a ,  e in awadh
+        'E', // 	ऄ à	904	2308		short a ,  e in awadh
         'a', // 	अ	905	2309	vovls
         'aα', // 	आ  àα α	906	2310	vovls
-        'aI', // 	इ	907	2311	vovls
-        'aI', // 	ई	908	2312	vovls
-        'aU', // 	उ	909	2313	vovls
-        'aU', // 	ऊ	90A	2314	vovls
+        'I', // 	इ	907	2311	vovls
+        'I', // 	ई	908	2312	vovls
+        'U', // 	उ	909	2313	vovls
+        'U', // 	ऊ	90A	2314	vovls
         'ri', // 	ऋ	90B	2315	vovls
         'li', // 	ऌ	90C	2316	vovls
-        'aE', // 	ऍ	90D	2317	no	candra e
-        'aE', // 	ऎ	90E	2318	no	short e
-        'aE', // 	ए	90F	2319	vovls
-        'aE', // 	ऐ	910	2320	vovls
+        'E', // 	ऍ	90D	2317	no	candra e
+        'E', // 	ऎ	90E	2318	no	short e
+        'E', // 	ए	90F	2319	vovls
+        'E', // 	ऐ	910	2320	vovls
         'O', // 	ऑ	911	2321		candra o
-        'aO', // 	ऒ	912	2322		short o
-        'aO', // 	ओ	913	2323
-        'aO', // 	औ	914	2324
+        'O', // 	ऒ	912	2322		short o
+        'O', // 	ओ	913	2323
+        'O', // 	औ	914	2324
         'k', // 	क	915	2325
         'K', // 	ख	916	2326
         'g', // 	ग	917	2327
