@@ -7,7 +7,7 @@ import {
 export const v_to_f = (sval: string): string => {
     switch (sval) {
       case "ing15b": return ing15b.className;
-      case "ing15m": return ing15m.className;
+      //case "ing15m": return ing15m.className;
       //case "iing15b": return iing15b.className;
       //case "ihindi15b": return ihindi15b.className;
       //case "ing4": return ing4.className;

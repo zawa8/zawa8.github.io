@@ -37,8 +37,8 @@ export const usinhl2idict: {
         'gh', // 	d9d gha
         'N', // 	d9e nga
         'N', // 	d9f nnga
-        'c', // 	da0 ch
-        'C', // 	da1 chh
+        'ch', // 	da0 ch
+        'Ch', // 	da1 chh
         'z', // 	da2 za
         'Z', // 	da3 zha
         'n', // 	da4= sinhala letter nya
