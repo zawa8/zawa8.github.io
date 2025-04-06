@@ -29,7 +29,7 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 	// let nekst_char: string = '';
 	const hinchars: string = "kKzZtTdDjJqQnpfbBmyrlSs"; // ɦa"; 
 //////////////////
-	let ing32: string = ioz.i.replace(
+	const ing32: string = ioz.i.replace(
 		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
 		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
 //////////////////
