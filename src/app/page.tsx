@@ -43,10 +43,10 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
+          src="/logo3klr.jpg"
+          alt="zawa8 logo"
           width={180}
-          height={38}
+          height={180}
           priority
         />
 

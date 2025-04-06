@@ -29,21 +29,26 @@ function u2i_post(ioz: { i: string; o: string; z: string  }): void {
         /N/g,"ń");
     ioz.i = ioz.o = ioz.o.replaceAll( /chch/ig,"cch");
 }
-export function u2i(ioz: { i: string; o: string; z: string  }): void {
-    function is_in_it(list: Array<number> | Record<string, unknown>, val: number): boolean {
+/*
+ * function is_in_it(list: Array<number> | Record<string, unknown>, val: number): boolean {
         if (!Array.isArray(list)) { list = Object.keys(list).map(Number); }
         return list.indexOf(val) !== -1;
-    }
+}
+*/
+export function u2i(ioz: { i: string; o: string; z: string  }): void {
     u2i_pre(ioz);
     const inputLength: number = ioz.i.length;
     let indeks: number = 0;
     ioz.o = '';
     let curr_char: string = ''; let nekst_char: string = '';
     let curr_char_code: number = 0;
-    let prev_lang_code: number = 0; let curr_lang_code: number = 0;
-    let prev_char_modulo: number = 0; let curr_char_modulo: number = 0;
+    // let prev_lang_code: number = 0;
+    let curr_lang_code: number = 0;
+    // let prev_char_modulo: number = 0;
+    let curr_char_modulo: number = 0;
     while (indeks < inputLength) {
-        prev_lang_code = curr_lang_code; prev_char_modulo = curr_char_modulo; 
+        // prev_lang_code = curr_lang_code;
+        // prev_char_modulo = curr_char_modulo; 
         if (indeks === 0) { curr_char = ioz.i[indeks]; } else { curr_char = nekst_char; }
         curr_char_code = curr_char.charCodeAt(0);
         curr_lang_code = (curr_char_code / 0x80) >> 0;
