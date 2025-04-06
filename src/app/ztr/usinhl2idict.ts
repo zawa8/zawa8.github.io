@@ -34,10 +34,10 @@ export const usinhl2idict: {
         'k', // 	d9a ka
         'K', // 	d9b kha
         'g', // 	d9c ga
-        'gh', // 	d9d gha
+        'Gh', // 	d9d gha
         'N', // 	d9e nga
         'N', // 	d9f nnga
-        'ch', // 	da0 ch
+        'c', // 	da0 ch
         'Ch', // 	da1 chh
         'z', // 	da2 za
         'Z', // 	da3 zha

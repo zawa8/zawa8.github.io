@@ -11,12 +11,12 @@ function u2i_pre(ioz: { i: string; o: string; z: string  }): void {
 function u2i_post(ioz: { i: string; o: string; z: string  }): void {
 	// wowel_chr at boundary/in_between
 	//nई ई कई uई eई oई iई  αई Aई  aई Nई
-    ioz.i = ioz.o = ioz.o.replaceAll(
+    ioz.o = ioz.o.replaceAll(
 		/^a([IUEO])/g, "$1").replace(
 		/([\b\saαAiueoN])a([IUEO])/g, "$1$2").replace(
 		/([IUEO])/g, function(v) { return v.toLowerCase(); }
-	);//.replaceAll(/([hiueo])A/g, "$1");
-    ioz.i = ioz.o = ioz.o.replaceAll(
+	);
+    ioz.o = ioz.o.replaceAll(
         /([a-zԃɦńᴛ])aa/ig,"$1a").replaceAll(
         /([iueo])a([αIUEO])/g,"$1$2").replaceAll(
         /wN\b/g,"wm").replaceAll(
@@ -26,8 +26,10 @@ function u2i_post(ioz: { i: string; o: string; z: string  }): void {
         /N([),\'\s\.!\?naeiuhwv\b])/g,"$1").replaceAll(
         /N([bBpf])/g,"m$1").replaceAll(
         /N([^kgKG])/g,"n$1").replaceAll(
-        /N/g,"ń");
-    ioz.i = ioz.o = ioz.o.replaceAll( /chch/ig,"cch");
+        /N/g,"n");
+    //ioz.o = ioz.o.replaceAll( /chch/ig,"cch");
+    //ioz.o = ioz.o.replaceAll( /([kgcztdjqpbs])ɦ/g,"$1ah");//.replaceAll("ɦ","h");
+    //ioz.o = ioz.o.replaceAll( /([kgcztdjqpbs])ɦ/ig,"$1ah");//.replaceAll("ɦ","h");
 }
 /*
  * function is_in_it(list: Array<number> | Record<string, unknown>, val: number): boolean {
@@ -42,13 +44,9 @@ export function u2i(ioz: { i: string; o: string; z: string  }): void {
     ioz.o = '';
     let curr_char: string = ''; let nekst_char: string = '';
     let curr_char_code: number = 0;
-    // let prev_lang_code: number = 0;
     let curr_lang_code: number = 0;
-    // let prev_char_modulo: number = 0;
     let curr_char_modulo: number = 0;
     while (indeks < inputLength) {
-        // prev_lang_code = curr_lang_code;
-        // prev_char_modulo = curr_char_modulo; 
         if (indeks === 0) { curr_char = ioz.i[indeks]; } else { curr_char = nekst_char; }
         curr_char_code = curr_char.charCodeAt(0);
         curr_lang_code = (curr_char_code / 0x80) >> 0;

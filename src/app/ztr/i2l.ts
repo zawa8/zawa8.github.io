@@ -29,9 +29,9 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 	// let nekst_char: string = '';
 	const hinchars: string = "kKzZtTdDjJqQnpfbBmyrlSs"; // ɦa"; 
 //////////////////
-	const ing32: string = ioz.i.replace(
-		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
-		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
+//	const ing32: string = ioz.i.replace(
+//		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
+//		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
 //////////////////
 	while (indeks < inputLength) {
 		curr_chr = ioz.i[indeks];
@@ -45,7 +45,7 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 
 	ioz.o =
 		"\nhinԃi: " + oarr[0] + "\n\n" +
-		"ing4:[a-z]+4αԃɦт/ADHT: " + ing32 + "\n\n" +
+		"ing4:[a-z]+4αԃɦт/ADHT: " + ioz.i + "\n\n" +
 		"punzαbi gurmukhi: " + oarr[2] + "\n\n" +
 		"bαngla bengαli: " + oarr[1] + "\n\n" +
 		"тelugu: " + oarr[5] + "\n\n" +
@@ -55,10 +55,14 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
         "malayαlam: " + oarr[7] + "\n\n" +
         "odiα/oriyα: " + oarr[4] + "\n\n" +
         "sinhalα: " + oarr[8] + "\n\n" +
-        "guzrαтi: " + oarr[3] + "\n\nEng:52:a-z+A-Z ing:31:a-z+àԃɦńᴛ.\n" +
-		"aam aaDmi ki zrurт : bhasa anek , likhai anek , sbme 8aiueohcg ek.\n" +
-		"wn wowels(8aiueohcg) wn india wn bharT great india\n" +
-		"https://zawa8.vercel.app/font ing115b.ttf hindi115b.ttf android/chrome/firefox/windows/linux\n";
+        "guzrαтi: " + oarr[3];
+	ioz.o = ioz.o.replace(
+		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
+		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
+	ioz.o = ioz.o + "\n\nEng:52:a-z+A-Z ing4:a-z+4αԃɦт_ADHT.\n" +
+		"ααm ααԃmi ki zrurт : bhαsα anek , likhαi anek , sbme 8aiueohcg ek.\n" +
+		"wn wowels(8αiueohcg) wn indiα wn bhαrT great indiα\n" +
+		"https://zawa8.vercel.app/ -> font\ning115b.ttf hindi115b.ttf android/chrome/firefox/windows/linux\n";
 }
 
 /*
