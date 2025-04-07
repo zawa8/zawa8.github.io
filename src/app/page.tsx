@@ -41,16 +41,9 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/logo3klr.jpg"
-          alt="zawa8 logo"
-          width={180}
-          height={180}
-          priority
+		<Image className="dark:invert" src="/logo3klr.jpg" alt="zawa8 logo" 
+		  width={100} height={100} priority
         />
-
-
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
@@ -58,14 +51,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            <Image className="dark:invert" src="/logo3klr.jpg" alt="zawa8 logo"
+              width={20} height={20} />
+            deploy now
           </a>
           <FontPicker/>
           <a
