@@ -12,8 +12,8 @@ function u2i_post(ioz: { i: string; o: string; z: string  }): void {
 	// wowel_chr at boundary/in_between
 	//nई ई कई uई eई oई iई  αई Aई  aई Nई
     ioz.o = ioz.o.replaceAll(
-		/^A([IUEO])/g, "$1").replace(
-		/([\b\saαAiueoN])A([IUEO])/g, "$1$2").replace(
+		/^A([IUEO])/g, "$1").replaceAll(
+		/([^kgcztdjqpbshɦyrlwmnf])A([IUEO])/g, "$1$2").replaceAll(
 		/([IUEO])/g, function(v) { return v.toLowerCase(); }
 	);
     ioz.o = ioz.o.replaceAll(
