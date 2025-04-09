@@ -8,23 +8,23 @@ export const u2idict: {
         'N', // 	ँ	901	2305		anunasika(candrabindu)
         'N', // 	ं ń	902	2306	anuswara	anusvara bindu
         ':', // 	ः	903	2307		visarga
-        'aE', // 	ऄ à	904	2308		short a ,  e in awadh
-        'a', // 	अ	905	2309	vovls
-        'aα', // 	आ  àα α	906	2310	vovls
-        'aI', // 	इ	907	2311	vovls
-        'aI', // 	ई	908	2312	vovls
-        'aU', // 	उ	909	2313	vovls
-        'aU', // 	ऊ	90A	2314	vovls
+        'AE', // 	ऄ à	904	2308		short a ,  e in awadh
+        'A', // 	अ	905	2309	vovls
+        'Aα', // 	आ  àα α	906	2310	vovls
+        'AI', // 	इ	907	2311	vovls
+        'AI', // 	ई	908	2312	vovls
+        'AU', // 	उ	909	2313	vovls
+        'AU', // 	ऊ	90A	2314	vovls
         'ri', // 	ऋ	90B	2315	vovls
         'li', // 	ऌ	90C	2316	vovls
-        'aE', // 	ऍ	90D	2317	no	candra e
-        'aE', // 	ऎ	90E	2318	no	short e
-        'aE', // 	ए	90F	2319	vovls
-        'aE', // 	ऐ	910	2320	vovls
-        'aO', // 	ऑ	911	2321		candra o
-        'aO', // 	ऒ	912	2322		short o
-        'aO', // 	ओ	913	2323
-        'aO', // 	औ	914	2324
+        'AE', // 	ऍ	90D	2317	no	candra e
+        'AE', // 	ऎ	90E	2318	no	short e
+        'AE', // 	ए	90F	2319	vovls
+        'AE', // 	ऐ	910	2320	vovls
+        'AO', // 	ऑ	911	2321		candra o
+        'AO', // 	ऒ	912	2322		short o
+        'AO', // 	ओ	913	2323
+        'AO', // 	औ	914	2324
         'k', // 	क	915	2325
         'K', // 	ख	916	2326
         'g', // 	ग	917	2327
@@ -118,10 +118,10 @@ export const u2idict: {
         '9', // 	९	96F	2415
         '_', // 	॰	970	2416		abbreviation sign
         '__', // 	ॱ	971	2417		high spacing dot
-        'a', // 	ॲ	972	2418		A
-        'aO', // 	ॳ	973	2419		o
-        'aO', // 	ॴ	974	2420		oe
-        'aO', // 	ॵ	975	2421		ao
+        'A', // 	ॲ	972	2418		A
+        'AO', // 	ॳ	973	2419		o
+        'AO', // 	ॴ	974	2420		oe
+        'AO', // 	ॵ	975	2421		ao
         'ui', // 	ॶ	976	2422		ui
         'ui', // 	ॷ	977	2423		uui
         'q', // 	ॸ	978	2424		d

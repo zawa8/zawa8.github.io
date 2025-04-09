@@ -12,15 +12,15 @@ function u2i_post(ioz: { i: string; o: string; z: string  }): void {
 	// wowel_chr at boundary/in_between
 	//nई ई कई uई eई oई iई  αई Aई  aई Nई
     ioz.o = ioz.o.replaceAll(
-		/^a([IUEO])/g, "$1").replace(
-		/([\b\saαAiueoN])a([IUEO])/g, "$1$2").replace(
+		/^A([IUEO])/g, "$1").replace(
+		/([\b\saαAiueoN])A([IUEO])/g, "$1$2").replace(
 		/([IUEO])/g, function(v) { return v.toLowerCase(); }
 	);
     ioz.o = ioz.o.replaceAll(
-        /([a-zԃɦńᴛ])aa/ig,"$1a").replaceAll(
-        /([iueo])a([αIUEO])/g,"$1$2").replaceAll(
+        /([a-zԃɦńᴛ])Aa/g,"$1a").replaceAll(
+        /([iueo])A([αIUEO])/g,"$1$2").replaceAll(
         /wN\b/g,"wm").replaceAll(
-        /([aiueo])N\b/g,"$1").replaceAll(
+        /([Aaiueo])N\b/g,"$1").replaceAll(
         /N([w])/g,"$1").replaceAll( //gaNw nhi gaw
         /(^r)N$/g,"$1").replaceAll(
         /N([),\'\s\.!\?naeiuhwv\b])/g,"$1").replaceAll(

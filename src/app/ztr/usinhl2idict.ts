@@ -10,24 +10,24 @@ export const usinhl2idict: {
         'N', // d82 nbindu
         ':', // d83 visarga
         'e', // d84
-        'a', // d85 letter a
-        'aα', // d86 letter aa
-        'ae', // d87  letter ae
+        'A', // d85 letter a
+        'Aα', // d86 letter aa
+        'Ae', // d87  letter ae
         'αe', // d88  letter aae
-        'aI', // d89  letter i
-        'aI', // d8a letter ii
-        'aU', // d8b= sinhala letter u
-        'aU', // d8c= sinhala letter uu
+        'AI', // d89  letter i
+        'AI', // d8a letter ii
+        'AU', // d8b= sinhala letter u
+        'AU', // d8c= sinhala letter uu
         'r', // 	d8d volalic r
         'ri', // 	d8e vocalic rr
         'l', // 	d8f volalic l
         'li', // 	d90 volalic ll
-        'aE', // 	d91 letter e
-        'aE', // 	d92 letter ee
-        'aE', // 	d93= sinhala letter ai
-        'aO', // 	d94= sinhala letter o
-        'aO', // 	d95= sinhala letter oo
-        'aO', // 	d96= sinhala letter au
+        'AE', // 	d91 letter e
+        'AE', // 	d92 letter ee
+        'AE', // 	d93= sinhala letter ai
+        'AO', // 	d94= sinhala letter o
+        'AO', // 	d95= sinhala letter oo
+        'AO', // 	d96= sinhala letter au
         '', // 	d97 null
         '', // 	d98 null
         '', // 	d99 null

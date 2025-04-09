@@ -27,7 +27,7 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 	let indeks: number = 0; 
 	let curr_chr: string = ''; 
 	// let nekst_char: string = '';
-	const hinchars: string = "kKzZtTdDjJqQnpfbBmyrlSs"; // ɦa"; 
+	const hinchars: string = "kKzZtTdDjJqQnpfbBmyrlSsɦA"; // ɦa"; 
 //////////////////
 //	const ing32: string = ioz.i.replace(
 //		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
@@ -44,18 +44,18 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
   	}
 
 	ioz.o =
-		"\nhinԃi: " + oarr[0] + "\n\n" +
-		"ing4:[a-z]+4αԃɦт/ADHT: " + ioz.i + "\n\n" +
-		"punzαbi gurmukhi: " + oarr[2] + "\n\n" +
-		"bαngla bengαli: " + oarr[1] + "\n\n" +
-		"тelugu: " + oarr[5] + "\n\n" +
-		"korean: " + oarr[10] + "\n\n" +
-		"тamil: " + oarr[9] + "\n\n" +
-		"kannadα: " + oarr[6] + "\n\n" +
-        "malayαlam: " + oarr[7] + "\n\n" +
-        "odiα/oriyα: " + oarr[4] + "\n\n" +
-        "sinhalα: " + oarr[8] + "\n\n" +
-        "guzrαтi: " + oarr[3];
+		"\nmodern_hinԃi: " + oarr[0] + "\n\n" +
+		"modern_ing4:[a-z]+4αԃɦт/ADHT: " + ioz.i + "\n\n" +
+		"modern_punzαbi gurmukhi: " + oarr[2] + "\n\n" +
+		"modern_bαnglα bengαli: " + oarr[1] + "\n\n" +
+		"modern_тelugu: " + oarr[5] + "\n\n" +
+		"modern_korean: " + oarr[10] + "\n\n" +
+		"modern_тamil: " + oarr[9] + "\n\n" +
+		"modern_kannadα: " + oarr[6] + "\n\n" +
+        "modern_malayαlam: " + oarr[7] + "\n\n" +
+        "modern_odiα/oriyα: " + oarr[4] + "\n\n" +
+        "modern_sinhalα: " + oarr[8] + "\n\n" +
+        "modern_guzrαтi: " + oarr[3];
 	ioz.o = ioz.o.replace(
 		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
 		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
