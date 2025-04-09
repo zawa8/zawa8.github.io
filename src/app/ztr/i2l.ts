@@ -45,7 +45,7 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 
 	ioz.o =
 		"\nmodern_hinԃi: " + oarr[0] + "\n\n" +
-		"modern_ing4:[a-z]+4αԃɦт/ADHT: " + ioz.i + "\n\n" +
+		"modern_ing4:[a-z]+4αԃɦт: " + ioz.i + "\n\n" +
 		"modern_punzαbi gurmukhi: " + oarr[2] + "\n\n" +
 		"modern_bαnglα bengαli: " + oarr[1] + "\n\n" +
 		"modern_тelugu: " + oarr[5] + "\n\n" +
@@ -59,7 +59,7 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 	ioz.o = ioz.o.replace(
 		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
 		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
-	ioz.o = ioz.o + "\n\nEng:52:a-z+A-Z ing4:a-z+4αԃɦт.\n" +
+	ioz.o = ioz.o + "\n\nEng:52:a-z+A-Z ing4:a-z+4αԃɦт/ADHT.\n" +
 		"ααm ααԃmi ki zrurт : bhαsα anek , likhαi anek , sbme 8aiueohcg ek.\n" +
 		"wn wowels(8αiueohcg) wn indiα wn bhαrT great indiα\n" +
 		"https://zawa8.vercel.app/ -> font\ning115b.ttf hindi115b.ttf android/chrome/firefox/windows/linux\n";
