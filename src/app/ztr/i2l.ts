@@ -59,7 +59,7 @@ export function i2l(ioz: { i: string; o: string; z: string  }): void {
 	ioz.o = ioz.o.replace(
 		/([KZTDJQBS])/g, function(v) { return v.toLowerCase()+"h"; }
 		).replace(/j/g, 'т').replace(/q/g, 'ԃ');
-	ioz.o = ioz.o + "\n\nEng:52:a-z+A-Z ing4:a-z+4αԃɦт_ADHT.\n" +
+	ioz.o = ioz.o + "\n\nEng:52:a-z+A-Z ing4:a-z+4αԃɦт.\n" +
 		"ααm ααԃmi ki zrurт : bhαsα anek , likhαi anek , sbme 8aiueohcg ek.\n" +
 		"wn wowels(8αiueohcg) wn indiα wn bhαrT great indiα\n" +
 		"https://zawa8.vercel.app/ -> font\ning115b.ttf hindi115b.ttf android/chrome/firefox/windows/linux\n";
