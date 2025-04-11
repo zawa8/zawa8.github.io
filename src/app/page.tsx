@@ -6,10 +6,25 @@ import Image from "next/image";
 import { duztr } from "./ztr/duztr";
 // import { ue2il } from "./ztr/ue2il";
 import { Button } from "@/components/ui/button"
+import { Textarea } from "@/components/ui/textarea"
 import FontPicker from '@/components/lifonts/lifp';
 
 export default function Home() {
-  const [iteksta, set_iteksta] = useState('this is trαnsliterator for phonetical languages. please paste unicode indian/bangladesh/srilanka languages.');
+  const [iteksta, set_iteksta] = useState(`
+    ԃis is trαnsliterator for phonetical languages.steps to use :
+    1. please replace ԃis tekst by some unicode indiα/bangladesh/srilankα languages.
+    1.1 to paste unicode try search : wiki indiα in indian languages
+    2. pls press eu2i btn.
+    3. result : tekst areα down.
+    `
+  );
+  const sampletkst = `
+  select language binary/inglish4/... n see changes below.
+  x.com=xmericα=Americα=Aks.com white=wvite
+  ziro wn two three four fiwe siks sewen
+  0123 4567 89LY VWPF . 4finger_mxths . 8+8=10=wnti=4*4
+  eight nine ten twelwe dblu purn fiwn
+  `;
   const [oteksta, set_oteksta] = useState('');
   const itekst: string = "";
   const otekst: string = "";
@@ -41,9 +56,7 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-		<Image className="dark:invert" src="/flg8.jpg" alt="zawa8 logo" 
-		  width={100} height={100} priority
-        />
+		<Image className="dark:invert" src="/flg8.jpg" alt="zawa8 logo" width={100} height={100} priority />
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <FontPicker/>
           <a
@@ -52,18 +65,18 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            try bigttf 115b font
+            hscii fonts
           </a>
-          <textarea id="ita" onInput={itekst_on_input}></textarea>
+          <Textarea id="ita" onInput={itekst_on_input} value={sampletkst}></Textarea>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <textarea id="ita" value={iteksta} onChange={handle_ita_change} cols={80}></textarea>
+          <Textarea id="ita" value={iteksta} onChange={handle_ita_change}></Textarea>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <Button onClick={on_eu2l}>eu2l</Button>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <textarea id="ota" value={oteksta} onChange={handle_ota_change} cols={80} rows={12}></textarea>
+          <Textarea id="ota" value={oteksta} onChange={handle_ota_change} cols={80} rows={12} placeholder='tekst generation areα'></Textarea>
         </div>        
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
@@ -73,13 +86,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
+		  <Image aria-hidden src="/file.svg" alt="File icon" width={16} height={16} />
           Learn
         </a>
         <a
@@ -88,13 +95,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
+		  <Image aria-hidden src="/window.svg" alt="Window icon" width={16} height={16} />
           Examples
         </a>
         <a
@@ -103,14 +104,8 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
+		  <Image aria-hidden src="/globe.svg" alt="Globe icon" width={16} height={16} />
+          go2nextjs.org →
         </a>
       </footer>
     </div>
