@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button"
 import FontPicker from '@/components/lifonts/lifp';
 
 export default function Home() {
-  const [iteksta, set_iteksta] = useState('6यरलमनफ5टडपबस');
+  const [iteksta, set_iteksta] = useState('this is trαnsliterator for phonetical languages. please paste unicode indian/bangladesh/srilanka languages.');
   const [oteksta, set_oteksta] = useState('');
   const itekst: string = "";
   const otekst: string = "";
@@ -41,28 +41,18 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-		<Image className="dark:invert" src="/logo3klr.jpg" alt="zawa8 logo" 
+		<Image className="dark:invert" src="/flg8.jpg" alt="zawa8 logo" 
 		  width={100} height={100} priority
         />
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image className="dark:invert" src="/logo3klr.jpg" alt="zawa8 logo"
-              width={20} height={20} />
-            deploy now
-          </a>
           <FontPicker/>
           <a
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/zawa8s/font/tree/main/bigttf/115b"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Read our docs
+            try bigttf 115b font
           </a>
           <textarea id="ita" onInput={itekst_on_input}></textarea>
         </div>
